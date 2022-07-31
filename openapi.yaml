@@ -1,8 +1,14 @@
 openapi: 3.0.3
 info:
-  title: The SpatioTemporal Asset Catalog API - Context
-  description: Adds search related metadata (context) to GeoJSON Responses.
+  title: The SpatioTemporal Asset Catalog API - Context Extension
+  description: Adds search related metadata (context) to responses.
   version: 1.0.0-rc.1
+  contact:
+    name: STAC Specification
+    url: 'http://stacspec.org'
+  license:
+    name: Apache License 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0'
 paths: {}
 components:
   schemas:
