@@ -1,4 +1,4 @@
-# STAC API - Context Fragment
+# STAC API - Context Extension
 
 - **OpenAPI specification:** [openapi.yaml](openapi.yaml)
 - **Conformance Classes:** 
