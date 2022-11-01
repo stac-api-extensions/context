@@ -2,19 +2,20 @@
 
 - **OpenAPI specification:** [openapi.yaml](openapi.yaml)
 - **Conformance Classes:** 
-  - **STAC API - Item Search** binding: <https://api.stacspec.org/v1.0.0-rc.1/item-search#context>
-  - **STAC API - Features** binding: <https://api.stacspec.org/v1.0.0-rc.1/ogcapi-features#context>
-- **Extension [Maturity Classification](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.1/README.md#maturity-classification):** Candidate
+  - **STAC API - Item Search** binding: <https://api.stacspec.org/v1.0.0-rc.2/item-search#context>
+  - **STAC API - Features** binding: <https://api.stacspec.org/v1.0.0-rc.2/ogcapi-features#context>
+- **Extension [Maturity Classification](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/README.md#maturity-classification):** Candidate
 - **Dependencies:**
-  - [STAC API - Features](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.1/ogcapi-features)
-  - [STAC API - Item Search](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.1/item-search)
+  - [STAC API - Features](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/ogcapi-features)
+  - [STAC API - Item Search](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/item-search)
 
-This extension is intended to augment the core [ItemCollection](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.1/itemcollection/README.md)
+This extension is intended to augment the core [ItemCollection](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/itemcollection/README.md)
 object when the ItemCollection is the result of a search, for example, from calling the `/search` API endpoint.
 
 This fragment may be bound to either or both of 
-[STAC API - Item Search](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.1/item-search) (`/search` endpoint) or
-[STAC API - Features](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.1/ogcapi-features) (`/collections/{collectionId}/items` endpoint) by
+[STAC API - Item Search](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/item-search) (`/search` endpoint) or
+[STAC API - Features](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/ogcapi-features)
+(`/collections/{collectionId}/items` endpoint) by
 advertising the relevant conformance class. 
 
 **Note**: OGC API Features - Part 1 has its own way returning `numberMatched` and `numberReturned` at the top level, instead of in a context
@@ -26,9 +27,9 @@ is required to implement both when implementing STAC Features.
 
 ## ItemCollection fields
 
-| Element   | Type                              | Description                                                                                                                                 |
-| --------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `context` | [Context Object](#context-object) | **REQUIRED.** The search-related metadata for the [ItemCollection](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.1/itemcollection/README.md). |
+| Element   | Type                              | Description                                                                                                                                                  |
+| --------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `context` | [Context Object](#context-object) | **REQUIRED.** The search-related metadata for the [ItemCollection](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/itemcollection/README.md). |
 
 ## Context Object
 
