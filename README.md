@@ -1,13 +1,23 @@
-# STAC API - Context Extension
+# STAC API - Context Extension Specification
+
+- [STAC API - Context Extension Specification](#stac-api---context-extension-specification)
+  - [Overview](#overview)
+  - [ItemCollection fields](#itemcollection-fields)
+  - [Context Object](#context-object)
+  - [Example ItemCollection augmented with Context field](#example-itemcollection-augmented-with-context-field)
+
+## Overview
 
 - **OpenAPI specification:** [openapi.yaml](openapi.yaml)
-- **Conformance Classes:** 
+- **Conformance Classes:**
   - **STAC API - Item Search** binding: <https://api.stacspec.org/v1.0.0-rc.2/item-search#context>
   - **STAC API - Features** binding: <https://api.stacspec.org/v1.0.0-rc.2/ogcapi-features#context>
-- **Extension [Maturity Classification](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/README.md#maturity-classification):** Candidate
+- **Scope:** STAC API - Features, STAC API - Item Search
+- **[Extension Maturity Classification](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/README.md#maturity-classification):** Deprecated
 - **Dependencies:**
   - [STAC API - Features](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/ogcapi-features)
   - [STAC API - Item Search](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/item-search)
+- **Owner**: none
 
 This extension is intended to augment the core [ItemCollection](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/itemcollection/README.md)
 object when the ItemCollection is the result of a search, for example, from calling the `/search` API endpoint.
