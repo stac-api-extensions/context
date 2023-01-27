@@ -8,6 +8,7 @@
 
 ## Overview
 
+- **Title**: Context
 - **OpenAPI specification:** [openapi.yaml](openapi.yaml)
 - **Conformance Classes:**
   - **STAC API - Item Search** binding: <https://api.stacspec.org/v1.0.0-rc.2/item-search#context>
